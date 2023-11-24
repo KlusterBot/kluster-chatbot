@@ -1,0 +1,8 @@
+.App, #root, body{
+    height:100%;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('./fonts/pop.ttf')
+}

@@ -1,0 +1,514 @@
+:root {
+    --green: #2e7d32;
+    --darkgreen: #071E22;
+    --grey: #CFCFCF;
+    --red: #A5668B;
+    --blue: #607196;
+    --theme: #2B2B2B;
+    --grammarly-button-position-right: 75px;
+    --grammarly-button-position-bottom: 45px;
+}
+
+* {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.visitor-info {
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: -webkit-fill-available;
+    height: fit-content;
+}
+
+.spacey {
+    justify-content: space-evenly;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.editBtn {
+    margin-left: auto;
+}
+
+#body {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    background: var(--grey)
+}
+
+#home_body {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    background: var(--grey)
+}
+
+#screenshare {
+    width: 100%;
+    height: auto;
+}
+
+#account-menu {
+    background: var(--darkgreen);
+}
+
+.menuText {
+}
+
+.menuIcon {
+    color: var(--darkgreen);
+}
+
+.no_messages {
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.visitorMessage {
+    width: 100%;
+    min-height: fit-content;
+    height: fit-content;
+    max-height: fit-content;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.visitorMessage .message {
+    width: fit-content;
+    padding: 10px;
+    user-select: text;
+    font-family: 'Mulish';
+    line-height: 1;
+    word-wrap: break-word;
+    max-width: 65%;
+}
+
+.userMessage {
+    width: 100%;
+    min-height: fit-content;
+    height: fit-content;
+    max-height: fit-content;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.userMessage .message {
+    width: fit-content;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+    background: var(--theme);
+    color: white;
+    user-select: text;
+    font-family: 'Mulish';
+    line-height: 1;
+    word-wrap: break-word;
+    max-width: 65%;
+}
+
+.userMessage .messageButton {
+    width: -moz-fill-available;
+    width: --webkit-fill-available;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: black;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Mulish';
+    line-height: 1;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0px;
+}
+
+.visitorMessage .messageButton {
+    width: -moz-fill-available;
+    width: --webkit-fill-available;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: black;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Mulish';
+    line-height: 1;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0px;
+}
+
+.messageButton span {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    color: var(--theme);
+    background: white;
+    user-select: none;
+    font-family: 'Mulish';
+    line-height: 1;
+    word-wrap: break-word;
+    max-width: 65%;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+    border: 1px solid var(--theme);
+}
+
+.message a {
+    text-decoration: underline;
+}
+
+.imageSent {
+    width: auto !important;
+    max-width: 70% !important;
+    margin-right: auto;
+    background: white !important;
+    border-radius: 5px;
+    padding: 0px !important;
+}
+
+.visitorMessage .mui-image-wrapper svg {
+    width: auto !important;
+    max-width: 70% !important;
+    margin-right: auto;
+    background: white !important;
+    border-radius: 5px;
+    padding: 50px !important;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.userMessage .mui-image-wrapper svg {
+    width: auto !important;
+    max-width: 70% !important;
+    margin-left: auto;
+    background: white !important;
+    border-radius: 5px;
+    padding: 50px !important;
+    margin-right: 10px;
+    border: 2px solid var(--theme);
+}
+
+.userMessage .imageSent {
+    border: 2px solid var(--theme);
+}
+
+.visitorMessage .imageSent {
+    border: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.mui-image-wrapper {
+}
+
+.userTyping {
+    width: 100%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    margin: 5px;
+}
+
+.userTyping .message {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    max-width: 91%;
+    -webkit-user-select: none;
+    user-select: none;
+    background: black;
+    color: white;
+    word-wrap: break-word;
+    border-radius: 10px;
+}
+
+.badgeOnline {
+}
+
+.messageTime {
+    display: block;
+    width: fit-content;
+    font-size: 10px;
+    color: darkgrey;
+    font-weight: bold;
+    user-select: none;
+    margin-left: auto;
+    padding: 5px;
+    align-self: end;
+}
+
+.userMessage .messageTime {
+    margin-left: 5px;
+    margin-right: unset;
+    align-self: end;
+}
+
+.visitorMessage .messageTime {
+    margin-right: 5px;
+}
+
+.actionButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mulish';
+    margin: 5px;
+}
+
+.actionButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.triggerActions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: fit-content;
+    max-height: 400px;
+    overflow: auto;
+    min-height: 100px;
+}
+
+.triggerCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#sendBtn {
+    background: var(--theme);
+}
+
+.openedImage {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    background: transparent !important;
+}
+
+.grammarly {
+    width: 100%;
+}
+
+.grammarly button {
+}
+
+#showMoreMessages {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    border: 1px solid var(--theme);
+    padding: 1px 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: var(--theme);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    user-select: none;
+    background: white;
+    font-family: 'Mulish';
+}
+
+#helpInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--theme); */
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.go-right {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    min-width: 50px;
+}
+
+.chatTime {
+    font-size: 11px;
+    color: grey;
+    padding: 5px;
+    padding-bottom: 0px;
+}
+
+.tick {
+}
+
+.tick svg {
+    font-size: 20px;
+}
+
+.MuiBadge-root .MuiBadge-badge {
+    /* Hack to fix badge (online status) */
+    bottom: 5px;
+    right: 5px;
+}
+
+.userMessage .message {
+    border-radius: 10px 10px 0px 10px;
+}
+
+.visitorMessage .message {
+    border-radius: 10px 10px 10px 0px;
+}
+
+.userMessage .messageBorder {
+    border-radius: 10px 10px 10px 10px;
+}
+
+.visitorMessage .messageBorder {
+    border-radius: 10px 10px 10px 10px;
+}
+
+.visitorMessage .messageBorderUp {
+    border-radius: 0px 10px 10px 10px;
+}
+
+.visitorMessage .messageBorderFlat {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.userMessage .messageBorderUp {
+    border-radius: 10px 0px 10px 10px;
+}
+
+.userMessage .messageBorderFlat {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.messageBoxButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.messageBoxButton .message {
+}
+
+.visitorMessage.messageBoxButton > .message {
+    margin-right: auto;
+}
+
+.userMessage.messageBoxButton > .message {
+}
+
+.userMessage .typingIndicator {
+}
+
+.visitorMessage .typingIndicator {
+    margin-right: auto;
+}
+
+.chatAvatar {
+    margin: 5px;
+    align-self: end;
+}
+
+.flexMe {
+    width: 100%;
+    display: flex;
+}
+
+.actionButton div {
+    background: var(--theme);
+}
+
+.same-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.same-line-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.activeStatus {
+}
+
+.responsive {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.responsive .main {
+    width: 100%;
+    height: 100%;
+}
+
+.responsive .side {
+    width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .responsive .side {
+        display: none;
+    }
+}

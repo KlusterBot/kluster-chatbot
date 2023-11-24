@@ -1,0 +1,21 @@
+#BalanceTab {
+    background: var(--blue);
+    color: white;
+    width: -webkit-fill-available;
+    height: 150px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#CallHistory{
+    background: var(--darkgreen);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer_name{
+    margin: 10px;
+    margin-top: auto;
+    font-family: poppins;
+}
