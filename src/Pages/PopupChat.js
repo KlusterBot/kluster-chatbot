@@ -657,7 +657,7 @@ function PopupChat(props) {
                     <Avatar
                         className="visitor-img"
                         alt={user.company}
-                        src={api + "/logo/" + user.logo}
+                        src={api + "/files/" + user.logo}
                         sx={{
                             width: 50,
                             height: 50,
