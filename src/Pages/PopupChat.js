@@ -625,7 +625,7 @@ function PopupChat(props) {
                     variant="outlined"
                 >
                     <Avatar
-                        src={api + "/logo/" + user.logo}
+                        src={api + "/files/" + user.logo}
                         sx={{
                             width: 100,
                             height: 100,
