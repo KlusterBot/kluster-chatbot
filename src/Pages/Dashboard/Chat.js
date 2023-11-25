@@ -412,7 +412,6 @@ function Chat(props) {
     const allChats = () => {
         return (
             <div className="page">
-                <PersistentDrawerLeft title="Chats" />
                 <div className="chatPageBody">
                     {visitors.length == undefined
                         ? ""

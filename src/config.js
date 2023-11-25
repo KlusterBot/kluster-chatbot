@@ -1,6 +1,6 @@
 let api =
     document.location.hostname == "localhost"
-        ? "http://localhost:2020"
+        ? "https://api.kluster-ai.online"
         : "https://api.kluster-ai.online";
 
 if (document.location.hostname.startsWith("172")) {

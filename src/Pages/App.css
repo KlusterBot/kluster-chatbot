@@ -1,12 +1,12 @@
-:root{
+:root {
     --green: #2e7d32;
-    --darkgreen: #071E22;
-    --grey: #CFCFCF;
-    --red: #A5668B;
+    --darkgreen: #071e22;
+    --grey: #cfcfcf;
+    --red: #a5668b;
     --blue: #607196;
 }
 
-html{
+html {
     -webkit-tap-highlight-color: transparent;
     outline-style: none;
     overscroll-behavior: none;
@@ -102,16 +102,16 @@ section {
 
 #appname {
     font-size: 25px;
-    font-family: 'poppins';
+    font-family: "poppins";
 }
 
 #infoEmail {
     margin: 15px;
-    font-family: 'poppins';
+    font-family: "poppins";
     font-size: 20px;
 }
 
-.loader{
+.loader {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -123,7 +123,7 @@ section {
     align-items: center;
 }
 
-.loader1{
+.loader1 {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -135,25 +135,25 @@ section {
     align-items: center;
 }
 
-#appbar{
+#appbar {
     background: var(--green);
 }
 
-.pagebody, .chatPageBody{
+.pagebody,
+.chatPageBody {
     width: -webkit-fill-available;
-    margin-top: 55px;
     height: 95%;
     overflow: auto;
     overscroll-behavior: contain;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
 }
 
-.pagebody::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+.pagebody::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
-.visitor{
+.visitor {
     margin: 1px;
     padding: 20px;
     display: flex;
@@ -164,7 +164,7 @@ section {
     border-radius: 0px !important;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -173,23 +173,23 @@ section {
     margin-left: 15px;
 }
 
-.block{
+.block {
     display: block !important;
 }
 
-.m-3{
+.m-3 {
     margin: 30px;
 }
 
-.m-1{
+.m-1 {
     margin: 10px;
 }
 
-.p-1{
+.p-1 {
     padding: 10px;
 }
 
-.chatHead{
+.chatHead {
     width: -webkit-fill-available;
     padding: 10px;
     display: flex;
@@ -197,52 +197,52 @@ section {
     align-items: center;
 }
 
-#activeStatusChat{
+#activeStatusChat {
     margin-left: 20px;
     min-width: 150px;
-    width:-webkit-fill-available;
+    width: -webkit-fill-available;
     user-select: none;
 }
 
-#activeStatusChat h3{
+#activeStatusChat h3 {
     margin: 0px;
     font-family: poppins;
 }
 
-#chatBody{
+#chatBody {
     background: whitesmoke;
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     scroll-behavior: smooth;
     overflow: hidden;
     overflow-y: auto;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
     overscroll-behavior: contain;
 }
 
-#chatBody::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+#chatBody::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
-#messageBox::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+#messageBox::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
-#coverTextBox{
-    width:-webkit-fill-available;
+#coverTextBox {
+    width: -webkit-fill-available;
     background: white;
     height: 150px;
 }
 
-#textbox{
+#textbox {
     background: white;
     width: -webkit-fill-available;
     height: 50px;
 }
 
-#messageBox{
-    width:-webkit-fill-available;
+#messageBox {
+    width: -webkit-fill-available;
     border: 0px;
     border-radius: 10px;
     background: transparent;
@@ -250,11 +250,11 @@ section {
     resize: none;
     padding: 10px;
     outline: none;
-    font-family: 'Mulish';
+    font-family: "Mulish";
     caret-color: var(--theme);
 }
 
-#callButtons{
+#callButtons {
     background: #c8e6c9;
     position: fixed;
     width: -webkit-fill-available;
@@ -266,19 +266,18 @@ section {
     align-items: center;
 }
 
-#callInfo{
+#callInfo {
     text-transform: capitalize;
 }
 
-#callBtn{
+#callBtn {
     margin: 10px;
 }
 
-#companyLogo{
-    
+#companyLogo {
 }
 
-#poweredBy{
+#poweredBy {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -288,29 +287,29 @@ section {
     border: 0px;
     user-select: none;
     text-transform: uppercase;
-    font-family: 'poppins';
+    font-family: "poppins";
     color: grey;
 }
 
-#logo-small{
+#logo-small {
     height: 15px;
     width: auto;
     margin-left: 5px;
 }
 
-#poweredBy a{
+#poweredBy a {
     margin-left: 2px;
     color: var(--theme);
 }
 
-.message_file{
+.message_file {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
 
-.downloadLink{
+.downloadLink {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -330,7 +329,11 @@ section {
     position: relative;
     background-size: 100% calc(90% + 12px);
     z-index: 1;
-    background-image: linear-gradient(135deg, rgba(42, 39, 218, 0.72) 0%, rgba(0, 204, 255, 0.72) 100%);
+    background-image: linear-gradient(
+        135deg,
+        rgba(42, 39, 218, 0.72) 0%,
+        rgba(0, 204, 255, 0.72) 100%
+    );
 }
 
 .offline-message span {
@@ -356,4 +359,11 @@ section {
     border-top-style: initial;
     border-left-style: initial;
     border-right-style: initial;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
