@@ -219,10 +219,12 @@ function PopupChat(props) {
                 const parent = document.location.ancestorOrigins[0];
 
                 if (event.origin !== parent) {
+                    console.log("global", event.data);
                     return;
                 }
 
                 const data = event.data;
+                console.log({ data });
 
                 if (data.action === "newMessage") {
                     setMessageCount(Math.random());
@@ -552,6 +554,7 @@ function PopupChat(props) {
         if (inIframe() && window.parent) {
             const parent = document.location.ancestorOrigins[0];
             window.parent.top.postMessage(data, parent);
+            console.log({ data, parent });
             return true;
         }
         return false;
