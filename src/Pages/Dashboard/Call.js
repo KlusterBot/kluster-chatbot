@@ -416,7 +416,7 @@ function Call(props) {
         setOpen(open);
     }
 
-    const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+    const handleClose = (event, reason) => {
         if (reason === 'clickaway') {
           return;
         }
