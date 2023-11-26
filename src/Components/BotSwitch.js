@@ -5,13 +5,13 @@ import { green } from '@mui/material/colors';
 
 const BotSwitch = styled(Switch)(({ theme }) => ({
   '& .MuiSwitch-switchBase.Mui-checked': {
-    color: "var(--theme)",
+    color: "#FFF",
     '&:hover': {
       backgroundColor: alpha(green[500], theme.palette.action.hoverOpacity),
     },
   },
   '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-    backgroundColor: "var(--theme)",
+    backgroundColor: "#000",
   },
 }));
 
