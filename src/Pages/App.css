@@ -1,407 +1,407 @@
 :root {
-    --green: #2e7d32;
-    --darkgreen: #071e22;
-    --grey: #cfcfcf;
-    --red: #a5668b;
-    --blue: #607196;
+  --green: #2e7d32;
+  --darkgreen: #071e22;
+  --grey: #cfcfcf;
+  --red: #a5668b;
+  --blue: #607196;
 }
 
 html {
-    -webkit-tap-highlight-color: transparent;
-    outline-style: none;
-    overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  outline-style: none;
+  overscroll-behavior: none;
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .main-logo {
-    padding: 30px;
-    margin: 70px;
+  padding: 30px;
+  margin: 70px;
 }
 
 .largeBtn {
-    width: 95%;
-    padding: 15px !important;
-    text-transform: capitalize !important;
-    font-size: 15px !important;
-    font-weight: bolder !important;
+  width: 95%;
+  padding: 15px !important;
+  text-transform: capitalize !important;
+  font-size: 15px !important;
+  font-weight: bolder !important;
 }
 
 footer {
-    position: relative;
-    bottom: 5px;
-    margin: 10px;
-    text-align: center;
-    font-family: poppins;
-    width: -webkit-fill-available;
+  position: relative;
+  bottom: 5px;
+  margin: 10px;
+  text-align: center;
+  font-family: poppins;
+  width: -webkit-fill-available;
 }
 
 .App {
-    height: 100%;
+  height: 100%;
 }
 
 .green {
-    color: #2e7d32 !important;
+  color: #2e7d32 !important;
 }
 
 a {
-    display: flex;
-    text-decoration: none;
-    color: unset;
+  display: flex;
+  text-decoration: none;
+  color: unset;
 }
 
 /* Login */
 .login-illu {
-    width: 50%;
-    height: auto;
-    margin: 10px;
+  width: 50%;
+  height: auto;
+  margin: 10px;
 }
 
 .email-illu {
-    width: 100%;
-    height: auto;
-    margin: 10px;
+  width: 100%;
+  height: auto;
+  margin: 10px;
 }
 
 section {
-    width: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 .header {
-    margin: 10px;
-    font-size: 30px;
-    color: black;
+  margin: 10px;
+  font-size: 30px;
+  color: black;
 }
 
 .inputCover {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .textInput {
-    width: 90%;
+  width: 90%;
 }
 
 .loginBtn {
-    width: -webkit-fill-available;
-    margin-top: 10px !important;
+  width: -webkit-fill-available;
+  margin-top: 10px !important;
 }
 
 #infoText {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #appname {
-    font-size: 25px;
-    font-family: "poppins";
+  font-size: 25px;
+  font-family: "poppins";
 }
 
 #infoEmail {
-    margin: 15px;
-    font-family: "poppins";
-    font-size: 20px;
+  margin: 15px;
+  font-family: "poppins";
+  font-size: 20px;
 }
 
 .loader {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: #cccccc5c;
-    z-index: 99999999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #cccccc5c;
+  z-index: 99999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader1 {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: #0e0e10;
-    z-index: 99999999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #0e0e10;
+  z-index: 99999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #appbar {
-    background: var(--green);
+  background: var(--green);
 }
 
 .pagebody,
 .chatPageBody {
-    width: -webkit-fill-available;
-    height: 95%;
-    overflow: auto;
-    overscroll-behavior: contain;
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
+  width: -webkit-fill-available;
+  height: 95%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
 .chatPageBody {
-    height: max-content;
-    max-height: 95%;
-    border-radius: 0.5rem;
-    padding: 1rem 1rem 0;
-    border: 1px solid #b0b0b0;
+  height: max-content;
+  max-height: 95%;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 0;
+  border: 1px solid #b0b0b0;
 }
 
 .pagebody::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
 
 .visitor {
-    border: none !important;
-    border-bottom: 1px solid #d6d6d6 !important;
-    margin: 1px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: -webkit-fill-available;
-    border-radius: 0px !important;
+  border: none !important;
+  border-bottom: 1px solid #d6d6d6 !important;
+  margin: 1px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: -webkit-fill-available;
+  border-radius: 0px !important;
 }
 
 .chatPageBody > a:last-of-type .visitor {
-    border: none !important;
+  border: none !important;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 15px;
 }
 
 .block {
-    display: block !important;
+  display: block !important;
 }
 
 .m-3 {
-    margin: 30px;
+  margin: 30px;
 }
 
 .m-1 {
-    margin: 10px;
+  margin: 10px;
 }
 
 .p-1 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .chatHead {
-    width: -webkit-fill-available;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    background: #153aba;
-    color: white;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    font-size: 0.8rem;
+  width: -webkit-fill-available;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background: #153aba;
+  color: white;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  font-size: 0.8rem;
 }
 
 .chatHead2 {
-    width: -webkit-fill-available;
-    padding: 10px;
-    display: flex;
-    /* align-items: center; */
-    background: white;
-    color: white;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    font-size: 0.8rem;
+  width: -webkit-fill-available;
+  padding: 10px;
+  display: flex;
+  /* align-items: center; */
+  background: white;
+  color: white;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  font-size: 0.8rem;
 }
 
 #activeStatusChat {
-    margin-left: 20px;
-    min-width: 150px;
-    width: -webkit-fill-available;
-    user-select: none;
+  margin-left: 20px;
+  min-width: 150px;
+  width: -webkit-fill-available;
+  user-select: none;
 }
 
 #activeStatusChat h3 {
-    margin: 0px;
-    font-family: poppins;
+  margin: 0px;
+  font-family: poppins;
 }
 
 #chatBody {
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    scroll-behavior: smooth;
-    overflow: hidden;
-    overflow-y: auto;
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
-    overscroll-behavior: contain;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    padding: 0.5rem;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  overscroll-behavior: contain;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 0.5rem;
 }
 
 #chatBody::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
 
 #messageBox::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
 
 #coverTextBox {
-    width: -webkit-fill-available;
-    background: white;
-    height: 150px;
-    border-top: 1px solid #ccc;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+  width: -webkit-fill-available;
+  background: white;
+  height: 150px;
+  border-top: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 #textbox {
-    background: white;
-    width: -webkit-fill-available;
-    height: 50px;
+  background: white;
+  width: -webkit-fill-available;
+  height: 50px;
 }
 
 #messageBox {
-    width: -webkit-fill-available;
-    border: 0px;
-    border-radius: 10px;
-    background: transparent;
-    height: 30px;
-    resize: none;
-    padding: 10px;
-    outline: none;
-    font-family: "Mulish";
-    caret-color: var(--theme);
+  width: -webkit-fill-available;
+  border: 0px;
+  border-radius: 10px;
+  background: transparent;
+  height: 30px;
+  resize: none;
+  padding: 10px;
+  outline: none;
+  font-family: "Mulish";
+  caret-color: var(--theme);
 }
 
 #callButtons {
-    background: #c8e6c9;
-    position: fixed;
-    width: -webkit-fill-available;
-    bottom: 0px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  background: #c8e6c9;
+  position: fixed;
+  width: -webkit-fill-available;
+  bottom: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #callInfo {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 #callBtn {
-    margin: 10px;
+  margin: 10px;
 }
 
 #companyLogo {
 }
 
 #poweredBy {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    border: 0px;
-    user-select: none;
-    text-transform: uppercase;
-    font-family: "poppins";
-    color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border: 0px;
+  user-select: none;
+  text-transform: uppercase;
+  font-family: "poppins";
+  color: grey;
 }
 
 #logo-small {
-    height: 15px;
-    width: auto;
-    margin-left: 5px;
+  height: 15px;
+  width: auto;
+  margin-left: 5px;
 }
 
 #poweredBy a {
-    margin-left: 2px;
-    color: var(--theme);
+  margin-left: 2px;
+  color: var(--theme);
 }
 
 .message_file {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 
 .downloadLink {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
 }
 
 .no-clip-path .offline-message {
-    padding: 14px 28px 20px;
+  padding: 14px 28px 20px;
 }
 
 .offline-message {
-    margin: 18px -28px 0px;
-    color: currentcolor;
-    width: 100%;
-    padding: 14px 28px 7px;
-    position: relative;
-    background-size: 100% calc(90% + 12px);
-    z-index: 1;
-    background-image: linear-gradient(
-        135deg,
-        rgba(42, 39, 218, 0.72) 0%,
-        rgba(0, 204, 255, 0.72) 100%
-    );
+  margin: 18px -28px 0px;
+  color: currentcolor;
+  width: 100%;
+  padding: 14px 28px 7px;
+  position: relative;
+  background-size: 100% calc(90% + 12px);
+  z-index: 1;
+  background-image: linear-gradient(
+    135deg,
+    rgba(42, 39, 218, 0.72) 0%,
+    rgba(0, 204, 255, 0.72) 100%
+  );
 }
 
 .offline-message span {
-    z-index: 2;
-    position: relative;
-    display: inline-block;
-    font-size: 16px;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .no-clip-path .offline-message::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -8px;
-    left: -5px;
-    border-image-source: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNzIgMTUiPgogIDxwYXRoIGQ9Ik0zNDkuOCAxLjRDMzM0LjUuNCAzMTguNSAwIDMwMiAwaC0yLjVjLTkuMSAwLTE4LjQuMS0yNy44LjQtMzQuNSAxLTY4LjMgMy0xMDIuMyA0LjctMTQgLjUtMjggMS4yLTQxLjUgMS42Qzg0IDcuNyA0MS42IDUuMyAwIDIuMnY4LjRjNDEuNiAzIDg0IDUuMyAxMjguMiA0LjEgMTMuNS0uNCAyNy41LTEuMSA0MS41LTEuNiAzMy45LTEuNyA2Ny44LTMuNiAxMDIuMy00LjcgOS40LS4zIDE4LjctLjQgMjcuOC0uNGgyLjVjMTYuNSAwIDMyLjQuNCA0Ny44IDEuNCA4LjQuMyAxNS42LjcgMjIgMS4yVjIuMmMtNi41LS41LTEzLjgtLjUtMjIuMy0uOHoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==);
-    border-image-slice: 0 0 100%;
-    border-image-width: 0 0 15px;
-    border-image-repeat: stretch;
-    border-width: 0px 0px 15px;
-    border-bottom-style: solid;
-    border-color: initial;
-    border-top-style: initial;
-    border-left-style: initial;
-    border-right-style: initial;
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -8px;
+  left: -5px;
+  border-image-source: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNzIgMTUiPgogIDxwYXRoIGQ9Ik0zNDkuOCAxLjRDMzM0LjUuNCAzMTguNSAwIDMwMiAwaC0yLjVjLTkuMSAwLTE4LjQuMS0yNy44LjQtMzQuNSAxLTY4LjMgMy0xMDIuMyA0LjctMTQgLjUtMjggMS4yLTQxLjUgMS42Qzg0IDcuNyA0MS42IDUuMyAwIDIuMnY4LjRjNDEuNiAzIDg0IDUuMyAxMjguMiA0LjEgMTMuNS0uNCAyNy41LTEuMSA0MS41LTEuNiAzMy45LTEuNyA2Ny44LTMuNiAxMDIuMy00LjcgOS40LS4zIDE4LjctLjQgMjcuOC0uNGgyLjVjMTYuNSAwIDMyLjQuNCA0Ny44IDEuNCA4LjQuMyAxNS42LjcgMjIgMS4yVjIuMmMtNi41LS41LTEzLjgtLjUtMjIuMy0uOHoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==);
+  border-image-slice: 0 0 100%;
+  border-image-width: 0 0 15px;
+  border-image-repeat: stretch;
+  border-width: 0px 0px 15px;
+  border-bottom-style: solid;
+  border-color: initial;
+  border-top-style: initial;
+  border-left-style: initial;
+  border-right-style: initial;
 }
 
 .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
