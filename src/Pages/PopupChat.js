@@ -552,10 +552,15 @@ function PopupChat(props) {
 
     const sendToParent = (data) => {
         if (inIframe() && window.parent) {
-            const parent = document.location.ancestorOrigins[0];
-            window.parent.top.postMessage(data, parent);
-            console.log({ data, parent });
-            return true;
+            try {
+                const parent = document.location.ancestorOrigins[0];
+                window.parent.top.postMessage(data, parent);
+                window.parent.postMessage(data, parent);
+                console.log({ data, parent });
+                return true;
+            } catch (error) {
+                return true;
+            }
         }
         return false;
     };
@@ -656,7 +661,7 @@ function PopupChat(props) {
     const singleChat = (id) => {
         return (
             <div className="page">
-                <div className="chatHead">
+                <div className="chatHead2">
                     <Avatar
                         className="visitor-img"
                         alt={user.company}
@@ -668,7 +673,10 @@ function PopupChat(props) {
                         }}
                     />
                     <div id="activeStatusChat">
-                        <h3 className={"same-line-head"}>
+                        <h3
+                            className={"same-line-head"}
+                            style={{ color: "#5C5C5C" }}
+                        >
                             {user.company}{" "}
                             {user.legit == "true" ? (
                                 <VerifiedIcon
@@ -685,24 +693,13 @@ function PopupChat(props) {
                             {status}
                         </font>
                     </div>
-                    <CallIcon
-                        style={{ marginRight: "10px", cursor: "pointer" }}
-                        sx={{
-                            color:
-                                status === "offline" ||
-                                user.callable === "false"
-                                    ? red[500]
-                                    : green[500],
-                            display:
-                                user.callable === "false" ? "none" : "unset",
-                        }}
-                        onClick={() => {
-                            initCall();
-                        }}
-                    />
                     <KeyboardArrowDownIcon
                         fontSize={"large"}
-                        style={{ marginRight: "10px", cursor: "pointer" }}
+                        style={{
+                            marginRight: "10px",
+                            cursor: "pointer",
+                            color: "black",
+                        }}
                         onClick={() => {
                             closePopup();
                         }}
