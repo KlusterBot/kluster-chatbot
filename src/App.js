@@ -16,7 +16,6 @@ import { api } from "./config.js";
 import { io } from "socket.io-client";
 
 import { ProtectedRoute, AuthenticatedRoute } from "./Utils/RouteManager";
-import { NotificationSocketManager } from "./Utils/NotificationManager";
 
 function App() {
     let socket;
@@ -70,8 +69,6 @@ function App() {
                 }
                 // console.log(data);
             });
-
-            await NotificationSocketManager(socket, navigate);
         }
     };
 
