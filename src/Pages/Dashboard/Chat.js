@@ -466,7 +466,7 @@ function Chat(props) {
                                               sx={{
                                                   width: 50,
                                                   height: 50,
-                                                  bgcolor: green[100],
+                                                  bgcolor: "transparent",
                                               }}
                                           />
                                       </Badge>
