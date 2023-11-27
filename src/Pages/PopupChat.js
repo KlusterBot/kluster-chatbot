@@ -554,9 +554,9 @@ function PopupChat(props) {
         if (inIframe() && window.parent) {
             try {
                 const parent = document.location.ancestorOrigins[0];
-                window.parent.top.postMessage(data, parent);
+                // window.parent.top.postMessage(data, parent);
                 window.parent.postMessage(data, parent);
-                console.log({ data, parent });
+                console.log({ data, parent, update: true });
                 return true;
             } catch (error) {
                 return true;
