@@ -1,4 +1,4 @@
-# [Kluster AI](https://kluster-ai.com): Revolutionizing Customer Support 🚀
+# [Kluster AI](https://kluster-ai.online): Revolutionizing Customer Support 🚀
 
 Welcome to Kluster AI, where innovation meets customer support excellence. Our AI-driven solution is designed to transform your customer service, providing unmatched efficiency and seamless assistance.
 
@@ -28,7 +28,7 @@ Explore positive feedback from our satisfied customers who have experienced the 
 
 Ready to elevate your customer support experience? Collaborate with Kluster AI to streamline your customer service and unlock premium functionalities.
 
-Visit our website: [kluster-ai.com](https://kluster-ai.com)
+Visit our website: [kluster-ai.online](https://kluster-ai.online)
 
 ## Usage
 Follow the simple steps above to enhance customer support and engagement on your website.
